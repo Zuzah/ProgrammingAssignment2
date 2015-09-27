@@ -29,10 +29,10 @@ makeCacheMatrix <- function(x = matrix()) { #changed from numeric() to matrix() 
        }
        get <- function() x
        setsolve <- function(solve) m <<- solve #replaced mean() with solve() to cal inverse
-       getsolve <- function() m  #TODO: replace with a get inverse var
+       getsolve <- function() m  #changed label from getmean to getsolve
        list(set = set, get = get,
-            setsolve = setsolve,  #TODO: replace with a set inverse assignment
-            getsolve = getsolve)  #TODO: replace with a get inverse assignment
+            setsolve = setsolve,  #changed label from setmean to setsolve
+            getsolve = getsolve)  #changed label from getmean to getsolve
 
 }
 
